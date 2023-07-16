@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First bootstrap project</title>
+
+    <!--Link your css file here-->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!--Link Google Font files here-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--Bootstrap4 CDN -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!--Use this for Carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--USe this for lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+   
+
+
+</head>
+<body>
+
+
+
+
+
+<!--Navbar start-->
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/butterfly icon.png" width="30" height="30"></a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+
+
+      <ul class="navbar-nav ml-auto">
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">WHO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#divWhat">WHAT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#divWhere">WHERE</a>
+        </li>    
+      </ul> 
+
+</div>
+  </nav>
+
+
+  <div class="carousel slide" data-ride="false">
+ <!--Image Carousel-->
+ <div id="myCarousel" class="carousel slide" data-ride="false">
+    
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="./images/Brazil.jpg" alt="Travel" >
+    </div>
+    <div class="carousel-item active">
+      <img src="./images/kittens.jpg" alt="Brazil" >
+    </div>
+    <div class="carousel-item">
+      <img src="./images/music.jpg" alt="Sky">
+    </div>
+  </div>
+
+<!-- Indicators -->   
+  <ul class="carousel-indicators">
+    <li class ="slide1" data-target="#myCarousel" data-slide-to="0" ></li>
+    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+
+
+
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
+
+
+
+
+</div>
+  
+
+
+
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" >
+    <h3 class="margin">WHO AM I?</h3>
+    <img src="./images/boots.jpg" class="img-fluid rounded-circle margin" style="display:inline" alt="adventurer" width="350" height="450">
+    <h3><em>I'm an Adventurer</em></h3>
+  </div>
+  
+  <!-- Second Container -->
+  <div class="container-fluid bg-4 text-center" id="divWhat">
+    <h3 class="margin">What Am I?</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal"> 
+      <span class="	fas fa-search"></span> My favourite food
+    </a>
+  </div>
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>My favourite noodles</h3>
+            </div>
+            <div class="modal-body">
+                <img src="images/noodles.jpg" alt="noodles" width="80px" height="80px" id="noodleimg">
+                <p>Noodles are a type of food made from unleavened dough which is either rolled flat and cut, stretched, or extruded, into long strips or strings. Noodles are a staple food in many cultures (for example, Chinese noodles, Filipino noodles, Indonesian noodles, Japanese noodles, Korean noodles, Vietnamese noodles, and long and medium length Italian pasta) and made into a variety of shapes.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="">ok</button>
+              </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="images/noodles.jpg" alt="nooodles" class="img-responsive margin gallery" width="100%" height="60%">
+        <p>Noodles are a type of food made from unleavened dough which is either rolled flat and cut, stretched, or extruded, into long strips or strings.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="images/kittens.jpg" alt="kittens" height="60%" width="100%">
+          <p>All kittens are born with blue eyes and will have their fully developed eye color at around 8 weeks old. Even the darkest eyed cats once had little blue eyes when they first opened.</p>
+        </div>
+    </div>
+  </div>
+
+ 
+ 
+  
+  <!-- Footer -->
+  <footer class="container-fluid bg-4 text-center">
+    <p>Webpage Made By <span id="footer-name">Ffion</span></p> 
+  </footer>
+
+
+  
+  
+</body>
+</html>
